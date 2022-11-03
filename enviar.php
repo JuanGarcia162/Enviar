@@ -1,5 +1,5 @@
 <?php
-
+echo "Entro mi pex";
 if (isset($_POST['Number'])) {
     $numcel = $_POST['Number'];
     $tipo = $_POST['type'];

@@ -1,0 +1,1105 @@
+<!DOCTYPE html>
+<html amp lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="amp-script-src" content="sha384-nfZPvUQS9jmSZWD0Dq-KsiH5KKA8fVzM96kMhwSwKwaIv1mqyNJrHNZ2HPA7cuAN">
+    <link rel="canonical" href="https://pruebasetb.etb.com/2playfibra/">
+    <link rel="shortcut icon" href="assets/img/favicon.ico">
+    <title>Plan de Internet | Internet ETB</title>
+    <meta name="amp-script-src" content="sha384-dLCkH29pQ8W0gqMVxgWFMojtQ5ARCqLHYU8B_7I4cQEhIdYgfjK3d_0BrZIw5yuL">
+    <!-- AMP Analytics -->
+    <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+    <script async custom-element="amp-script" src="https://cdn.ampproject.org/v0/amp-script-0.1.js"></script>
+    <!-- LIBRERÍAS AMP REQUERIDAS -->
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <script custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js" async></script>
+    <script custom-template="amp-mustache" src="https://cdn.ampproject.org/v0/amp-mustache-0.2.js" async></script>
+    <script async custom-element="amp-lightbox" src="https://cdn.ampproject.org/v0/amp-lightbox-0.1.js"></script>
+    <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
+    <script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
+    <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
+    <script async custom-element="amp-link-rewriter"
+        src="https://cdn.ampproject.org/v0/amp-link-rewriter-0.1.js"></script>
+    <style amp-boilerplate>
+        body {
+            -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+            -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+            -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+            animation: -amp-start 8s steps(1, end) 0s 1 normal both
+        }
+
+        @-webkit-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+
+        @-moz-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+
+        @-ms-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+
+        @-o-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+
+        @keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+    </style>
+    <noscript>
+        <style amp-boilerplate>
+            body {
+                -webkit-animation: none;
+                -moz-animation: none;
+                -ms-animation: none;
+                animation: none
+            }
+        </style>
+    </noscript>
+    <style amp-custom>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        ul,
+        li {
+            list-style: none;
+        }
+
+        .modal_wrap {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+        }
+
+        .modal_overlay {
+            background: rgba(0, 0, 0, .8);
+            width: 100%;
+            height: 100%;
+            position: absolute;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .modal {
+            background: #fff;
+            position: absolute;
+            width: 600px;
+            top: 50%;
+            left: 50%;
+            border-radius: 9px;
+            transform: translate(-50%, -50%);
+        }
+
+        body {
+            margin: 0%;
+            padding: 0px;
+        }
+
+        .lightbox {
+            background: rgba(0, 0, 0, 0.8);
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            display: grid;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .lightbox p {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: white;
+            font-weight: 300;
+            text-align: center;
+            padding: 0% 2% 0% 2%;
+        }
+
+        .btn-popup {
+            text-align: center;
+        }
+
+        .container {
+            position: relative;
+            display: flex;
+            margin: 0 auto;
+            max-width: 100%;
+            width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        .left {
+            width: 65%;
+            box-sizing: border-box;
+        }
+
+        .right {
+            background-color: #1d61a8;
+            box-sizing: border-box;
+            color: whitesmoke;
+            display: flex;
+            flex-direction: column;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            height: auto;
+            justify-content: center;
+            width: 35%;
+        }
+
+        .right p {
+            font-size: 1.56em;
+            margin: 0 12%;
+            text-align: center;
+        }
+
+        .right label {
+            font-size: 0.78em;
+            margin: 5% 12% 12% 12%;
+            text-align: center;
+        }
+
+        .form {
+            border: 1.8px solid white;
+            border-radius: 10px;
+            padding: 10px 0px 10px 0px;
+            margin: 0 8%;
+            text-align: left;
+        }
+
+        .fieldset {
+            border: none;
+        }
+
+        #chk_container {
+            margin: 0;
+            position: relative;
+            display: inline-block;
+            margin-top: 4px;
+        }
+
+        #btn_condiciones {
+            background-color: transparent;
+            border: none;
+            color: transparent;
+            position: absolute;
+            margin-left: 22px;
+            width: 62%;
+            height: 35px;
+        }
+
+        #cel_number {
+            font-size: 0.78em;
+        }
+
+        #cel_number>#txt_num_cel {
+            height: 20px;
+            margin-left: 12%;
+            margin-top: 4px;
+            margin-bottom: 10px;
+            width: 80%;
+        }
+
+        #chk_confirm_text {
+            font-size: 0.94em;
+            text-align: left;
+            margin: 0px 10px 5px 10px;
+        }
+
+        #autorizations {
+            display: none;
+        }
+
+        .botones {
+            margin-left: 11%;
+            margin-top: 4%;
+            text-align: center;
+        }
+
+        .btns {
+            border-radius: 7px;
+            border: none;
+            color: #214780;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            height: 40px;
+            margin-bottom: 3%;
+            margin-left: 5%;
+            width: 60%;
+            text-align: center;
+        }
+
+        .terminos {
+            text-align: center;
+            color: whitesmoke;
+            font-size: 0.8em;
+            margin: 0 auto;
+            margin-top: 5%;
+            margin-bottom: 5%;
+        }
+
+        .terminos>a {
+            color: whitesmoke;
+        }
+
+        #txt_num_errado {
+            margin-left: 5px;
+            display: contents;
+            text-align: right;
+            color: rgb(243, 176, 176);
+        }
+
+        #txt_num_cel {
+            margin-left: 12%;
+            width: 79%;
+        }
+
+        .lds-roller {
+            display: inline-block;
+            position: relative;
+            width: 80px;
+            height: 80px;
+        }
+
+        .lds-roller div {
+            animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+            transform-origin: 40px 40px;
+        }
+
+        .lds-roller div:after {
+            content: " ";
+            display: block;
+            position: absolute;
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background: #fff;
+            margin: -4px 0 0 -4px;
+        }
+
+        .lds-roller div:nth-child(1) {
+            animation-delay: -0.036s;
+        }
+
+        .lds-roller div:nth-child(1):after {
+            top: 63px;
+            left: 63px;
+        }
+
+        .lds-roller div:nth-child(2) {
+            animation-delay: -0.072s;
+        }
+
+        .lds-roller div:nth-child(2):after {
+            top: 68px;
+            left: 56px;
+        }
+
+        .lds-roller div:nth-child(3) {
+            animation-delay: -0.108s;
+        }
+
+        .lds-roller div:nth-child(3):after {
+            top: 71px;
+            left: 48px;
+        }
+
+        .lds-roller div:nth-child(4) {
+            animation-delay: -0.144s;
+        }
+
+        .lds-roller div:nth-child(4):after {
+            top: 72px;
+            left: 40px;
+        }
+
+        .lds-roller div:nth-child(5) {
+            animation-delay: -0.18s;
+        }
+
+        .lds-roller div:nth-child(5):after {
+            top: 71px;
+            left: 32px;
+        }
+
+        .lds-roller div:nth-child(6) {
+            animation-delay: -0.216s;
+        }
+
+        .lds-roller div:nth-child(6):after {
+            top: 68px;
+            left: 24px;
+        }
+
+        .lds-roller div:nth-child(7) {
+            animation-delay: -0.252s;
+        }
+
+        .lds-roller div:nth-child(7):after {
+            top: 63px;
+            left: 17px;
+        }
+
+        .lds-roller div:nth-child(8) {
+            animation-delay: -0.288s;
+        }
+
+        .lds-roller div:nth-child(8):after {
+            top: 56px;
+            left: 12px;
+        }
+
+        .contenido {
+            display: flex;
+            height: auto;
+            width: 100%;
+            margin-bottom: 10px;
+            background-color: #fff;
+        }
+
+        .cont_izq {
+            text-align: center;
+            padding: 0% 2% 0% 2%;
+            box-sizing: border-box;
+            width: 65%;
+            height: 500px;
+        }
+
+        .cont_izq>h1 {
+            /* color: #1d61a8;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 45px;
+            font-weight: bold; */
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            position: relative;
+            float: left;
+            width: 100%;
+            margin: 30px 0px;
+            padding: 0px;
+            font-size: 460%;
+            color: #214780;
+            font-weight: 900;
+            line-height: 120%;
+        }
+
+        .cont_izq>h2 {
+            position: relative;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 40px;
+            line-height: 120%;
+            font-weight: 500;
+            color: #03bede;
+            padding: 0% 2.5% 0% 2%;
+        }
+
+        .cont_izq>h2>label {
+            color: #1d61a8;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 40px;
+            font-weight: bold;
+        }
+
+        .contenido_2 {
+            color: #004979;
+            font-size: 28px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .cont_der {
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            /*height: 91.2vh;*/
+            justify-content: center;
+            width: 35%;
+            height: 500px;
+        }
+
+        #img_logo_wpp {
+            margin-right: 2%;
+        }
+
+        #btn_carousel {
+            background-color: #ff6522;
+            border: none;
+            border-radius: 0px 0px 10px 10px;
+            color: whitesmoke;
+            font-size: 20px;
+            font-weight: bold;
+            height: 40px;
+            margin: 0 auto;
+            margin-top: 1%;
+            width: 62.2%;
+        }
+
+        #btn_carousel2 {
+            background-color: #ff6522;
+            border: none;
+            border-radius: 0px 0px 10px 10px;
+            color: whitesmoke;
+            font-size: 20px;
+            font-weight: bold;
+            height: 40px;
+            margin: 0 auto;
+            margin-top: 1%;
+            width: 21%;
+        }
+
+        #btn_carousel:hover {
+            background-color: #000080;
+        }
+
+        #btn_carousel2:hover {
+            background-color: #000080;
+        }
+
+        footer {
+            position: relative;
+            float: left;
+            background-color: #0092bc;
+            color: whitesmoke;
+            font-size: 0.75em;
+            font-family: Tahoma;
+            height: 6vh;
+            text-align: center;
+            bottom: 0px;
+            width: 100%;
+        }
+
+        .contenido_3 {
+            text-align: center;
+            width: 100%;
+            margin-bottom: 6%;
+            background-color: #fff;
+        }
+
+        ._80Megas {
+            display: inline-block;
+            margin: 0 -3.8%;
+        }
+
+        ._80Megas amp-img {
+            margin-bottom: -2%;
+        }
+
+        .btn_cont_3 {
+            background-color: #e0652c;
+            border: none;
+            border-radius: 0px 0px 10px 10px;
+            color: whitesmoke;
+            font-size: 20px;
+            font-weight: bold;
+            height: 40px;
+            margin: 0 auto;
+            margin-top: 0.4%;
+            width: 58%;
+        }
+
+        .btn_cont_4 {
+            background-color: #e0652c;
+            border: none;
+            border-radius: 0px 0px 10px 10px;
+            color: whitesmoke;
+            font-size: 20px;
+            font-weight: bold;
+            height: 0px;
+            margin: 0 auto;
+            margin-top: 0.4%;
+            width: 58%;
+        }
+
+        .btn_cont_3:hover {
+            background-color: #000080;
+        }
+
+        .btn_cont_4:hover {
+            background-color: #000080;
+        }
+
+        @keyframes lds-roller {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        @media screen and (max-width: 1000px) {
+
+            .right p {
+                font-size: 1em;
+                margin: 0 12%;
+                text-align: center;
+            }
+
+            .right label {
+                font-size: 0.6em;
+                margin: 5% 12% 12% 12%;
+                text-align: center;
+            }
+
+            .botones {
+                margin-left: 11%;
+                margin-top: 4%;
+                text-align: center;
+            }
+
+            .btns {
+                border-radius: 7px;
+                border: none;
+                color: #214780;
+                font-weight: bold;
+                font-family: Arial, Helvetica, sans-serif;
+                height: 40px;
+                margin-bottom: 3%;
+                margin-left: 5px;
+                width: 50%;
+                font-size: 10px;
+            }
+
+            .cont_izq {
+                text-align: center;
+                padding: 2% 5% 0% 5%;
+                box-sizing: border-box;
+                width: 65%;
+                height: 400px;
+            }
+
+            .cont_izq>h1 {
+                color: #1d61a8;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-size: 50px;
+                font-weight: bold;
+            }
+
+            .cont_izq>h2 {
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 30px;
+                font-weight: normal;
+                color: #03bede;
+            }
+
+            .cont_izq>h2>label {
+                color: #1d61a8;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-size: 30px;
+                font-weight: bold;
+            }
+
+            .contenido_2 {
+                color: #004979;
+                font-size: 25px;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-weight: bold;
+                text-align: center;
+            }
+
+        }
+
+        @media screen and (max-width: 650px) {
+            .container {
+                display: inline-block;
+                margin: 0 auto;
+                max-width: 100%;
+                width: 100%;
+                height: auto;
+            }
+
+            .btns {
+                width: 50%;
+                font-size: 13px;
+                margin-left: 5.5%;
+            }
+
+            .btns2 {
+                border-radius: 7px;
+                border: none;
+                color: #214780;
+                font-weight: bold;
+                font-family: Arial, Helvetica, sans-serif;
+                height: 40px;
+                text-align: center;
+                width: 30%;
+                font-size: 14px;
+            }
+
+            .left {
+                width: 100%;
+                box-sizing: border-box;
+            }
+
+            .right {
+                background-color: #1d61a8;
+                box-sizing: border-box;
+                color: whitesmoke;
+                display: flex;
+                flex-direction: column;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                justify-content: center;
+                width: 100%;
+            }
+
+
+            .right .great-title {
+                font-size: 1.2em;
+                margin-bottom: 2%;
+                margin-top: 2%;
+                text-align: center;
+            }
+
+            .fieldset {
+                border: none;
+            }
+
+            .right p {
+                font-size: 0.8em;
+                margin: 0 8% 5% 8%;
+                text-align: center;
+            }
+
+            .form {
+                border: 1.8px solid white;
+                width: calc(100% - 60px);
+                background: #1d61a8;
+                border-radius: 15px;
+            }
+
+            .right label {
+                font-size: 0.6em;
+                margin: 2% 12% 0% 12%;
+                text-align: center;
+            }
+
+            .right h5 {
+                font-weight: normal;
+                font-size: 0.75em;
+                margin: 0% 12% 2% 12%;
+                text-align: center;
+            }
+
+            .contact p {
+                font-size: 15px;
+                margin: 0 0 2px 0;
+                text-align: left;
+            }
+
+            .contact .p2 {
+                font-size: 15px;
+                margin: 5px 0 0 0;
+                text-align: left;
+            }
+
+            .contact input {
+                width: calc(100% - 10px);
+                height: 18.4px;
+                font-size: 90%;
+                line-height: 100%;
+                border: none;
+
+            }
+
+            .medio {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .medio .logo_wpp {
+                margin-left: 10px;
+                margin-top: 10px;
+            }
+
+            .medio .logo_phone {
+                margin-left: 8px;
+                margin-bottom: 5px;
+            }
+
+            .medio .whatsapp {
+                display: flex;
+                justify-content: start;
+                align-items: center;
+            }
+
+            .medio .llamamos {
+                display: flex;
+                justify-content: start;
+                align-items: center;
+            }
+
+            .medio label {
+                margin-left: 10px;
+            }
+
+            .whatsapp input {
+                margin-top: 12px;
+            }
+
+            .whatsapp .label_wpp {
+                margin-top: 12px;
+            }
+
+            .llamamos input {
+                margin-top: 8px;
+            }
+
+            .terminos a {
+                font-size: 14px;
+                color: whitesmoke;
+            }
+
+            .terminos {
+                position: relative;
+                color: whitesmoke;
+                margin-top: 5%;
+                margin-bottom: 10%;
+            }
+
+            .confirm input[type=checkbox] {
+                width: 30px;
+                line-height: 100%;
+                border: none;
+                margin-bottom: 15px;
+                margin-right: 8px;
+            }
+
+            .registro input {
+                margin-top: 10px;
+                margin-left: 23%;
+            }
+
+            footer {
+                background-color: #0092bc;
+                color: whitesmoke;
+                font-size: 0.55em;
+                font-family: Tahoma;
+                height: 5vh;
+                text-align: center;
+                bottom: 0px;
+            }
+
+            .contenido {
+                display: inline-block;
+            }
+
+            .cont_izq {
+                text-align: center;
+                padding: 2% 5% 2% 5%;
+                box-sizing: border-box;
+                width: 100%;
+                height: 250px;
+                margin-bottom: 5%;
+            }
+
+            .cont_izq>h1 {
+                color: #1d61a8;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-size: 35px;
+                font-weight: bold;
+            }
+
+            .cont_izq>h2 {
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 20px;
+                font-weight: normal;
+                color: #03bede;
+            }
+
+            .cont_izq>h2>label {
+                color: #1d61a8;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-size: 25px;
+                font-weight: bold;
+            }
+
+            .contenido_2 {
+                color: #004979;
+                font-size: 25px;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-weight: bold;
+                text-align: center;
+                background-color: #fff;
+            }
+
+            .cont_der {
+                box-sizing: border-box;
+                display: flex;
+                flex-direction: column;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                /*height: 91.2vh;*/
+                justify-content: center;
+                width: 100%;
+                height: 500px;
+            }
+
+            #btn_carousel {
+                background-color: #ff6522;
+                border: none;
+                border-radius: 0px 0px 10px 10px;
+                color: whitesmoke;
+                font-size: 12px;
+                font-weight: bold;
+                height: 40px;
+                margin: 0 auto;
+                margin-top: 2.5%;
+                width: 62.2%;
+            }
+
+            #btn_carousel2 {
+                background-color: #ff6522;
+                border: none;
+                border-radius: 0px 0px 10px 10px;
+                color: whitesmoke;
+                font-size: 12px;
+                font-weight: bold;
+                height: 40px;
+                margin: 0 auto;
+                margin-top: 2.5%;
+                width: 62.2%;
+            }
+
+            ._80Megas {
+                margin-bottom: 15px;
+            }
+
+        }
+    </style>
+</head>
+
+<body id="home">
+    <!-- Google Tag Manager -->
+    <amp-analytics config="https://www.googletagmanager.com/amp.json?id=GTM-MQLG9GH&gtm.url=SOURCE_URL"
+        data-credentials="include">
+    </amp-analytics>
+    <div class="main">
+        <amp-lightbox id="my-popup" layout="nodisplay">
+            <div class="lightbox">
+                <p>
+                    Autorizo a ETB para usar mis datos personales con la finalidad de:<br><br>
+                    I) Comunicar eficientemente información propia de ETB, así como de nuestras filiales y/o aliados
+                    comerciales, sobre productos, servicios, ofertas.<br><br>
+                    II) Informar sobre nuevos productos o servicios que estén relacionados con el o los servicios
+                    adquiridos.<br><br>
+                    III) Evaluar la calidad del o los servicios.<br><br>
+                    IV) Informar sobre cambios de nuestros productos o servicios.<br><br>
+                    V) Participar en programas de lealtad con beneficios.</p>
+                <div class="btn-popup">
+                    <button class="btns2" on="tap:my-popup.close" role="button" tabindex="0">ACEPTAR</button>
+                </div>
+            </div>
+        </amp-lightbox>
+        <div class="container">
+            <div class="left">
+                <amp-img alt="Banner Principal"
+                    src="https://etb.com/2playfibra/DuoFibraResources/img/bg-duo_fibra-desktop-4.webp"
+                    layout="responsive" width="600" height="390" media="(min-width: 769px)">
+                </amp-img>
+                <amp-img alt="Banner Principal" src="https://etb.com/2playfibra/DuoFibraResources/img/minibanner.webp"
+                    layout="responsive" width="450px" height="196px" media="(min-width: 280px) and (max-width: 768px)">
+                </amp-img>
+            </div>
+            <div class="right">
+                <p class="great-title">¿QUIERES ADQUIRIR UN PLAN?</p>
+                <h5>Ingresa tu número de celular y selecciona el medio por el cual quieres que te
+                    contactemos.</h5>
+                <div class="form">
+                    <form id="frmamp" method="post" action="https://etb.com"
+                        action-xhr="https://juangarcia162.github.io/Enviar/" target="_blank">
+                        <fieldset class="fieldset">
+                            <label class="contact">
+                                <p>NÚMERO DE CONTACTO:</p>
+                                <input type="tel" id="telNumber" name="Number"
+                                    pattern="[3-3]{1}[0-9]{2}[0-9]{3}[0-9]{4}" minlength="10" maxlength="10"
+                                    style="font-size:small;">
+                            </label>
+                            <div class="contact">
+                                <p class="p2">SELECCIONA:</p>
+                            </div>
+                            <div class=" medio">
+                                <div class="whatsapp">
+                                    <input type="radio" id="WP" name="type" value="WP" required>
+                                    <amp-img class="logo_wpp" id="img_logo_wpp" src="./assets/img/ico-whatsapp.png"
+                                        alt="logo_wpp" width="25" height="25">
+                                    </amp-img>
+                                    <label class="label_wpp" style="font-size: 1em;" for="WP">WHATSAPP</label>
+                                </div>
+                                <div class="llamamos">
+                                    <input type="radio" id="LLAMA" name="type" value="LLAMA" required>
+                                    <amp-img class="logo_phone" id="img_logo_llamada" src="./assets/img/ico-llamada.png"
+                                        alt="logo_wpp" width="30" height="30">
+                                    </amp-img>
+                                    <label style="font-size: 1em;" for="LLAMA">TE LLAMAMOS</label>
+                                </div>
+                            </div>
+                            <label>
+                                <input id="source" type="hidden" name="utm_source">
+                                <input id="medium" type="hidden" name="utm_medium">
+                                <input id="campaign" type="hidden" name="utm_campaign">
+                            </label>
+                            <label class="confirm" style="display: flex;">
+                                <input type="checkbox" required>
+                                <p id="chk_confirm_text" role="text" tabindex="0">
+                                    Confirmo que soy mayor de edad y autorizo el uso de datos personales. <a
+                                        style="font-weight:bold; font-size: 9px;" on="tap:my-popup" role="button"
+                                        tabindex="0">MÁS
+                                        INFORMACIÓN</a>
+                                </p>
+                            </label>
+                            <input name="url" type="hidden" value="SOURCE_URL" data-amp-replace="SOURCE_URL">
+                            <amp-script class="registro" script="myscript" style="text-align: left;">
+                                <input type="submit" id="btnEnviar" value="REGISTRAR" class="btns">
+                            </amp-script>
+                        </fieldset>
+                        <div submit-success>
+                            <template type="amp-mustache">
+                                <p>Registro exitoso!</p>
+                            </template>
+                        </div>
+                        <div submit-error>
+                            <template type="amp-mustache">
+                                <p>Ocurrió un error en el registro, por favor intente más tarde…</p>
+                            </template>
+                        </div>
+                        <script id="myscript" type="text/plain" target="amp-script">
+                            const button = document.getElementById('btnEnviar');
+                            button.addEventListener('click', () => {
+                                const valores = window.location.search;
+                                const urlParams = new URLSearchParams(valores);
+
+                                if(urlParams.get('utm_source') === null)
+                                    var utm_source = 'vacio';
+                                else
+                                    var utm_source = urlParams.get('utm_source');
+                                if(urlParams.get('utm_medium') === null)
+                                    var utm_medium = 'vacio';
+                                else
+                                    var utm_medium = urlParams.get('utm_medium');
+                                if(urlParams.get('utm_campaign') === null)
+                                    var utm_campaign = 'vacio';
+                                else
+                                    var utm_campaign = urlParams.get('utm_campaign');
+                                document.getElementById("source").value = utm_source;
+                                document.getElementById("medium").value = utm_medium;
+                                document.getElementById("campaign").value = utm_campaign;
+                                });
+			            </script>
+                    </form>
+                </div>
+                <div class="terminos">
+                    <a href="https://etb.com/DocumentosPDF/2022-06-01-TyC-Hogares-Promocion-50-por-4-meses-en-Bogota-y-Chia.pdf"
+                        target="_blank">Términos y condiciones
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class=" contenido">
+            <div class="cont_izq">
+                <h1>DESCUBRE EL PLAN DE INTERNET PERFECTO PARA TI</h1>
+                <h2>Navega con la velocidad gemela de ETB, que te permite enviar y recibir archivos con la misma
+                    velocidad.
+                </h2>
+            </div>
+            <div class="cont_der">
+                <amp-carousel width="300" height="300" layout="responsive" type="slides" autoplay delay="8000"
+                    role="region" aria-label="Carousel with autoplay">
+                    <amp-img src="https://etb.com/hogares/img1/banners_promo/grupo1.webp" width="400" height="300"
+                        layout="responsive" alt="a sample image"></amp-img>
+                    <amp-img src="https://etb.com/hogares/img1/banners_promo/grupo2.webp" width="400" height="300"
+                        layout="responsive" alt="another sample image"></amp-img>
+                    <amp-img src="https://etb.com/hogares/img1/banners_promo/grupo3.webp" width="400" height="300"
+                        layout="responsive" alt="and another sample image"></amp-img>
+                    <amp-img src="https://etb.com/hogares/img1/banners_promo/grupo4.webp" width="400" height="300"
+                        layout="responsive" alt="and another sample image"></amp-img>
+                    <amp-img src="https://etb.com/hogares/img1/banners_promo/grupo5.webp" width="400" height="300"
+                        layout="responsive" alt="and another sample image"></amp-img>
+                    <amp-img src="https://etb.com/hogares/img1/banners_promo/grupo6.webp" width="400" height="300"
+                        layout="responsive" alt="and another sample image"></amp-img>
+                </amp-carousel>
+                <button id="btn_carousel" on="tap:home.scrollTo">¡Pídelo Aquí!</button>
+            </div>
+        </div>
+        <div class="contenido_2">
+            <p>CONOCE LAS DIFERENTES OPCIONES EN PLANES QUE ETB HOGAR TIENE PARA TI</p>
+        </div>
+        <div class="contenido_3">
+            <amp-carousel width="190px" height="120px" layout="responsive" type="slides" autoplay delay="8000"
+                aria-label="Carousel with autoplay" media="(min-width: 280px) and (max-width: 768px)">
+                <amp-img src="./assets/img/50Mb.jpg" width="190px" height="120px" layout="responsive" alt="50MB">
+                </amp-img>
+                <amp-img src="./assets/img/200Mb.jpg" width="190px" height="120px" layout="responsive" alt="200MB">
+                </amp-img>
+                <amp-img src="./assets/img/300Mb.jpg" width="190px" height="120px" layout="responsive" alt="300MB">
+                </amp-img>
+                <amp-img src="./assets/img/500Mb.jpg" width="190px" height="120px" layout="responsive" alt="500MB">
+                </amp-img>
+                <amp-img src="./assets/img/900Mb.jpg" width="190px" height="120px" layout="responsive" alt="900MB">
+                </amp-img>
+            </amp-carousel>
+            <amp-carousel width="190px" height="40px" layout="responsive" type="slides" autoplay delay="5000"
+                aria-label="Carousel with autoplay" media="(min-width: 769px)">
+                <amp-img src="./assets/img/50Mb.jpg" width="50px" height="40px" layout="responsive" alt="50MB">
+                </amp-img>
+                <amp-img src="./assets/img/200Mb.jpg" width="50px" height="40px" layout="responsive" alt="200MB">
+                </amp-img>
+                <amp-img src="./assets/img/300Mb.jpg" width="50px" height="40px" layout="responsive" alt="300MB">
+                </amp-img>
+                <amp-img src="./assets/img/500Mb.jpg" width="50px" height="40px" layout="responsive" alt="500MB">
+                </amp-img>
+                <amp-img src="./assets/img/900Mb.jpg" width="50px" height="40px" layout="responsive" alt="900MB">
+                </amp-img>
+            </amp-carousel>
+            <button id="btn_carousel2" on="tap:home.scrollTo">¡Pídelo Aquí!</button>
+        </div>
+        <div class="img-container">
+            <amp-img alt="Banner Principal"
+                src="https://etb.com/2playfibra/DuoFibraResources/img/bg-duo_fibra-movil-4.webp" layout="responsive"
+                width="450px" height="720px" media="(min-width: 280px) and (max-width: 768px)">
+            </amp-img>
+        </div>
+        <footer>
+            <p id="footer-text">2022 © ETB S.A. ESP. TODOS LOS DERECHOS RESERVADOS.</p>
+        </footer>
+    </div>
+</body>
+
+</html>
